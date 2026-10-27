@@ -13,4 +13,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: pip install pytest
       - run: pytest -q
-      - run: python reconcile.py sample/stripe_itemized.csv sample/bank.csv --out out
+      # The sample has two payouts that need attention, so the script exits 1 by design.
+      - run: |
+          python reconcile.py sample/stripe_itemized.csv sample/bank.csv --out out || test $? -eq 1
+          test -s out/report.md && test -s out/journal.csv
