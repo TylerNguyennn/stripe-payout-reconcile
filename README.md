@@ -60,6 +60,12 @@ Account names live in `ACCOUNTS` at the top of `reconcile.py`; rename them to ma
 python3 -m unittest discover -s tests
 ```
 
+## Part of a small finance-ops toolkit
+
+- [stripe-payout-reconcile](https://github.com/TylerNguyennn/stripe-payout-reconcile): split Stripe payouts into journal lines and match them to the bank statement.
+- [invoice-intake](https://github.com/TylerNguyennn/invoice-intake): supplier invoices from a mailbox, read by Claude, checked, approved, exported to Xero or QuickBooks.
+- [finops-mcp](https://github.com/TylerNguyennn/finops-mcp): ask Claude about receivables, payouts, disputes, bills and cash, read-only over Stripe.
+
 ## Need it for your setup?
 
 Real setups add more: several Stripe accounts, PayPal or Shopify Payments next to Stripe, multi-currency payouts, or pushing the entries straight into QuickBooks/Xero via API. I build and fix payment integrations for a living (PSPs, webhooks, payouts, reconciliation). Get in touch through [taewoo.me](https://taewoo.me).
