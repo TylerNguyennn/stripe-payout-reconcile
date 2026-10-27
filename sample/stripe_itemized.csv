@@ -1,0 +1,14 @@
+automatic_payout_id,automatic_payout_effective_at,balance_transaction_id,created_utc,currency,gross,fee,net,reporting_category,source_id,description
+po_1A,2026-10-01 00:00:00,txn_001,2026-09-28 10:12:00,usd,100.00,3.20,96.80,charge,ch_001,Order #1001
+po_1A,2026-10-01 00:00:00,txn_002,2026-09-28 15:40:00,usd,250.00,7.55,242.45,charge,ch_002,Order #1002
+po_1A,2026-10-01 00:00:00,txn_003,2026-09-29 09:05:00,usd,-40.00,0.00,-40.00,refund,re_001,Partial refund #1001
+po_1B,2026-10-03 00:00:00,txn_004,2026-09-30 11:00:00,usd,500.00,14.80,485.20,charge,ch_003,Order #1003
+po_1B,2026-10-03 00:00:00,txn_005,2026-10-01 08:30:00,usd,-120.00,15.00,-135.00,dispute,dp_001,Chargeback on #0990
+po_1B,2026-10-03 00:00:00,txn_006,2026-10-01 08:31:00,usd,-0.05,0.00,-0.05,fee,,Radar screening
+po_1C,2026-10-05 00:00:00,txn_007,2026-10-02 13:20:00,usd,80.00,2.62,77.38,charge,ch_004,Order #1004
+po_1C,2026-10-05 00:00:00,txn_008,2026-10-03 07:00:00,usd,120.00,0.00,120.00,dispute_reversal,dp_001,Chargeback won #0990
+po_1D,2026-10-07 00:00:00,txn_009,2026-10-04 18:45:00,usd,1000.00,29.30,970.70,charge,ch_005,Order #1005
+po_1D,2026-10-07 00:00:00,txn_010,2026-10-05 10:10:00,usd,-100.00,0.00,-100.00,refund,re_002,Refund #1005 item
+po_1E,2026-10-09 00:00:00,txn_011,2026-10-06 16:00:00,usd,60.00,2.04,57.96,charge,ch_006,Order #1006
+po_1E,2026-10-09 00:00:00,txn_012,2026-10-06 16:00:01,usd,-0.50,0.00,-0.50,climate_order,,Stripe Climate
+,,txn_013,2026-10-09 12:00:00,usd,45.00,1.61,43.39,charge,ch_007,Order #1007 (not paid out yet)
